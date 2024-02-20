@@ -1,0 +1,153 @@
+html {
+  font-family: monospace;
+  color: white;
+}
+body {
+  background-color: black;
+}
+header {
+  padding-top: 50px;
+  width: 100%;  
+}
+header h1,header p{
+  text-align: center;
+}
+
+main {
+  margin-top: 80px;
+}
+.message{
+  position: absolute;
+  top: -10px;
+  left: 30%;
+  width: 620px;
+  height: 100%;
+  display: none;
+
+}
+.messageBox{
+  background-color: rgba(15,15,15,0.8);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.showBox {
+  margin-top: 70px;
+  width: 300px ;
+  height: 300px;  
+  color: white;
+  font-size: 2rem;
+  opacity: 100%;
+}
+.text {
+  text-align: center;
+}
+.cancel {
+  width: 100%;
+  height: 50px;
+  border: none;
+  margin: 50px auto 20px auto;
+  border-radius: 10px;
+}
+.cancel svg {
+  margin-top: 5px;
+  width: 19px;
+}
+.cancel:hover {
+  background-color: rgb(106, 106, 106);
+  color: white;
+}
+
+.retry {
+  margin: 0px 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+}
+.box:hover {
+  background-color: #444;
+}
+
+.span {
+  font-size: 2rem;
+}
+
+.switch {
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  gap: 0;
+}
+.switch p {
+  width: 40%;
+  height: 35px;
+  text-align: center;
+  font-size: 25px;
+  margin: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 10px;
+  border: 2px #333 solid;
+  border-top: none;
+  border-right: none;
+}
+.container {
+  height: 35px;
+  width: 100px;
+  margin: 5px 5px;
+  
+}
+
+.last-section {
+  display: flex;
+  justify-content: center;
+}
+#time {
+  width: 70%;
+  font-size: 25px;
+}
+#clear {
+  border: 1px #333 solid;
+  background-color: #333;
+  border-left: none;
+  border-radius: 0px 0px 10px 0px; 
+  width: 30%;
+  height: 37px;
+  margin: 0px;
+}
+#clear:hover {
+  background-color: #777;
+}
+#clear svg {
+  margin-top: 2px;
+  width: 20px;
+}
+
+.resetTime {
+  width: 30%;
+  margin: 0px;
+  background-color: #333;
+  border: 1px #333 solid;
+  border-right: none;
+}
+.resetTime:hover {
+  background-color: #777;
+}
+.resetTime svg {
+  margin-top: 2px;
+  width: 20px;
+}
