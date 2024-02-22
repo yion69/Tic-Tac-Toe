@@ -34,35 +34,6 @@ button.forEach((element)=>{
             winChecker();
         }
     })
-    element.addEventListener('touchstart',(e) => {
-        const alreadyHasSpan = element.querySelector("span") !== null;
-        if(!alreadyHasSpan){
-
-            if(playerTurn) {
-                var span = document.createElement('span');
-                element.appendChild(span);
-                span.innerHTML = '&#10005;';
-                span.classList.add('span')
-                playerTurn = false;
-                count += 1;
-            }
-            else {
-                var span = document.createElement('span');
-                element.appendChild(span);
-                span.innerHTML = '&#9711;';
-                span.classList.add('span')
-                playerTurn = true;
-                count += 1;
-            }
-
-            if(count == 9){
-                message();
-                draw();
-                count=1;
-            }
-            winChecker();
-        }
-    })
 })
 
 clear.addEventListener("click",function(e){
