@@ -34,6 +34,7 @@ button.forEach((element)=>{
             winChecker();
         }
     })
+})
 
 clear.addEventListener("click",function(e){
     for(var i=0; i<button.length;i++){
